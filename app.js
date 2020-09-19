@@ -26,6 +26,12 @@ var mongoose = require('mongoose');
 // establish our MongoDB connection for the models
 mongoose.connect(config.db[app.settings.env]);
 
+router = require('./routes/routes')
+
+
+// Register our route
+app.use('/api/v1/', router);
+
 
 // Start the server
 app.listen(port);

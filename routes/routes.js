@@ -82,3 +82,6 @@ router.get('/product_quantities/:product_id', function(req, res) {
 	}
     });
 });
+
+
+module.exports=router;
